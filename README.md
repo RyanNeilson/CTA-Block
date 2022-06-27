@@ -6,9 +6,9 @@ A WordPress plugin that adds a Gutenberg block for creating call to action conte
 
 The Neilson CTA Block includes the following features:
 
-- A heading section in which the HTML tag, text color and background color can be customized. 
-- A collapsible content section that can use virtually any combination of blocks to populate the content, including accordion blocks.
-- ARIA-compliant attributes and controls, for navigation of the accordion block and toggling of the open/closed state.
+- Three layout options (Horizontal, Vertical Wide and Vertical Narrow), with the potential for more to be added.
+- The ability to add any combination of an image, header and body text in addition to the call to action button.
+- Options for customizing the colors, spacing and borders of the entire block or individual block elements.
 - Options for enabling and disabling any of the custom styling options, making it easy to override the block styles with your own custom CSS.
 
 ### Using this block
