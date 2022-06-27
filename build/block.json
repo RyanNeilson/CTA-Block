@@ -1,0 +1,226 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "neilson/cta-block",
+  "version": "0.1.0",
+  "title": "Neilson CTA Block",
+  "icon": "megaphone",
+  "category": "layout",
+  "description": "Create content with a call to action button.",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "id": {
+      "type": "string",
+      "default": ""
+    },
+    "borderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "paddings": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "bottom": "10px",
+        "left": "15px",
+        "right": "15px"
+      }
+    },
+    "margins": {
+      "type": "object",
+      "default": {
+        "top": "0px",
+        "bottom": "15px"
+      }
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 0
+    },
+    "heading": {
+      "type": "string",
+      "default": "CTA Header"
+    },
+    "headingTag": {
+      "type": "string",
+      "default": "h3"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "textPaddings": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "bottom": "10px",
+        "left": "15px",
+        "right": "15px"
+      }
+    },
+    "useTextPadding": {
+      "type": "boolean",
+      "default": false
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "textContent": {
+      "type": "string",
+      "default": "CTA text goes here..."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Click Here"
+    },
+    "buttonLink": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonPaddings": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "bottom": "10px",
+        "left": "15px",
+        "right": "15px"
+      }
+    },
+    "buttonBackgroundColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "buttonTextColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "buttonBorderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "buttonBorderColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "buttonBorderRadius": {
+      "type": "number",
+      "default": 0
+    },
+    "useCustomSpacings": {
+      "type": "boolean",
+      "default": false
+    },
+    "useCustomBorders": {
+      "type": "boolean",
+      "default": false
+    },
+    "useCustomColors": {
+      "type": "boolean",
+      "default": false
+    },
+    "useButtonStyles": {
+      "type": "boolean",
+      "default": false
+    },
+    "showHeader": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTextContent": {
+      "type": "boolean",
+      "default": true
+    },
+    "mediaId": {
+      "type": "number",
+      "default": 0
+    },
+    "mediaUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaThumbnail": {
+      "type": "string",
+      "default": ""
+    },
+    "useBoxShadows": {
+      "type": "boolean",
+      "default": false
+    },
+    "boxShadowColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "boxShadowXOffset": {
+      "type": "number",
+      "default": 0
+    },
+    "boxShadowYOffset": {
+      "type": "number",
+      "default": 0
+    },
+    "boxShadowBlur": {
+      "type": "number",
+      "default": 0
+    },
+    "boxShadowSpread": {
+      "type": "number",
+      "default": 0
+    },
+    "layout": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "imageAlignDesktop": {
+      "type": "string",
+      "default": "left"
+    },
+    "headingAlignDesktop": {
+      "type": "string",
+      "default": "left"
+    },
+    "textAlignDesktop": {
+      "type": "string",
+      "default": "left"
+    },
+    "buttonAlignDesktop": {
+      "type": "string",
+      "default": "left"
+    },
+    "imageAlignMobile": {
+      "type": "string",
+      "default": "left"
+    },
+    "headingAlignMobile": {
+      "type": "string",
+      "default": "left"
+    },
+    "textAlignMobile": {
+      "type": "string",
+      "default": "left"
+    },
+    "buttonAlignMobile": {
+      "type": "string",
+      "default": "left"
+    },
+    "buttonHoverColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "buttonHoverBackground": {
+      "type": "string",
+      "default": "#333333"
+    }
+  },
+  "textdomain": "neilson-cta-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

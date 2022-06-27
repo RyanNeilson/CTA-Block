@@ -1,0 +1,96 @@
+/**
+ * The following styles get applied both on the front of the site
+ * and in the editor.
+ */
+
+.ncb-cta-block {
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	overflow: hidden;
+
+	.mobile-align-left {
+		align-self: flex-start;
+		text-align: left;
+	}
+	.mobile-align-right {
+		align-self: flex-end;
+		text-align: right;
+	}
+	.mobile-align-center {
+		align-self: center;
+		text-align: center;
+	}
+	@media (min-width: 768px) {
+		.desktop-align-left {
+			align-self: flex-start;
+			text-align: left;
+		}
+		.desktop-align-right {
+			align-self: flex-end;
+			text-align: right;
+		}
+		.desktop-align-center {
+			align-self: center;
+			text-align: center;
+		}
+
+		&.layout-horizontal {
+			flex-direction: row;
+			width: fit-content;
+			
+			.desktop-align-left {
+				align-self: unset;
+				justify-self: flex-start;
+				text-align: left;
+			}
+			.desktop-align-center {
+				align-self: unset;
+				justify-self: center;
+				text-align: center;
+			}
+			.desktop-align-right {
+				align-self: unset;
+				justify-self: flex-end;
+				text-align: right;
+			}
+
+			.ncb-cta-block__image-wrapper {
+				max-width: 35%;
+			}
+		}
+	}
+
+	&.layout-vertical-narrow {
+		width: min-content;
+	}
+}
+
+.ncb-cta-block__image-wrapper {
+	display: flex;
+}
+
+.ncb-cta-block__text-wrapper {
+	flex: 1;
+}
+
+.ncb-cta-block__image {
+	object-fit: cover;
+}
+
+.ncb-cta-block__button-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.ncb-cta-block__button {
+	background: var(--button-background);
+	color: var(--button-text-color);
+	text-decoration: none;
+	width: max-content;
+	&:hover {
+		background: var(--button-hover-background);
+		color: var(--button-hover-text-color);
+	}
+}
+
